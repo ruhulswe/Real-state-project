@@ -289,7 +289,8 @@ a:focus, a:hover {
 
 .our-vision>h4,
 .our-values>h4,
-.about-text>h4{
+.about-text>h4,
+.typical-para>h4{
 	color: #C5A974
 }
 
@@ -302,6 +303,40 @@ a:focus, a:hover {
  /* mission-vission area */
 
 
+
+
+
+/*   typical-apartment    */
+
+.typical-apartment-img{
+	margin-bottom: 20px;
+}
+.typical-apartment-img>img{
+	width: 100%;
+}
+
+.typical-apartment-text{
+	margin-bottom: 50px;
+}
+
+.typical-para{
+	
+}
+
+.typical-para>h4{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.typical-para-one>p{
+	margin-left: 20px;
+}
+
+.typical-para-one>p>span{
+	margin-right: 5px;
+}
+
+/*   typical-apartment    */
 
 
 
