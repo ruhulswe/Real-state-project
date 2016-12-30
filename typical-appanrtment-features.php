@@ -1,88 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<?php 
 
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Berkelay homes</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  require_once "inc/header.php";
 
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-        
-    </head>
-    <body>
-       
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    
-	
-   
-	<!--Start of header-area--> 
-    
-    <div class="main-nav-area clearfix">
-		<nav class="navbar">
-		  <div class="container">
-		   <div class="row">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="logo"></a>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-			  <ul class="nav navbar-nav main-menu pull-right">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about-us.html">About us</a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
-					<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-					  <li><a href="#">Upcoming Project</a></li>
-					  <li><a href="#">Ongoing Project</a></li>
-					  <li><a href="#">Ready Project</a></li>
-					</ul>
-      			</li>
-				<li><a href="#">Online Inquiry</a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Features
-					<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-					  <li><a href="#">Structural Features</a></li>
-					  <li><a href="#">Common Area Finishing</a></li>
-					  <li><a href="typical-appanrtment-features.html">Typical Apartment Feature</a></li>
-					</ul>
-      			</li>
-				<li><a href="#">Gallary</a></li>
-				<li><a href="#">Customer Service</a></li>
-			  </ul>
-			</div><!-- /.navbar-collapse -->
-			</div><!-- /.row -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-   </div>
-    
-    
-   <!--End of header-area-->
-   
-   
-   
-
-   
-   
+?>
    
    
    
@@ -186,59 +106,8 @@
    
    
    
-   <div class="footer-area section-padding">
-   	<div class="container">
-   		<div class="row">
-   			<div class="col-md-4">
-   				<div class="addres-area">
-   					<h4>Address</h4>
-   					<p>Eastern commercial space</p>
-   					<p>A alliances building</p>
-   					<p>63 progoti sarani</p>
-   					<p>Baridhara bashundhara</p>
-   					<p>Dhaka , -1207</p>
-   				</div>
-   			</div>
-   			<div class="col-md-4">
-   				<div class="contact-info">
-   					<h4>Contact-info</h4>
-   					<p>+88 02 8831704</p>
-   					<p>+88 02 8831704</p>
-   					<p>+88 02 8831704</p>
-   				</div>
-   			</div>
-   			<div class="col-md-4">
-   				<div class="addres-area">
-   					<h4>Social Links</h4>
-					<ul class="footer-social-links">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-					</ul>
-   				</div>
-   			</div>
-   		</div>
-   	</div>
-   </div>
-   
-   
-   
-   
-   
-   
-   
-    
-    
-              
-        
-       
+<?php 
 
-    <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-        
-    </body>
-</html>
+  require_once "inc/footer.php";
+
+?>
