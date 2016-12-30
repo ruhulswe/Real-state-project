@@ -379,6 +379,16 @@ a:focus, a:hover {
 /*  about-us */
 
 
+.photo-gallery{}
+.photo-gallery img{
+	width: 100%;
+	
+}
+
+.section-title{
+	margin-bottom: 40px;
+}
+
 
 
 
