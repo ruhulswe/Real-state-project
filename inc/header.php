@@ -54,7 +54,7 @@
 					<ul class="dropdown-menu">
 					  <li><a href="#">Upcoming Project</a></li>
 					  <li><a href="ongoing-project.php">Ongoing Project</a></li>
-					  <li><a href="#">Ready Project</a></li>
+					  <li><a href="ready-project.php">Ready Project</a></li>
 					</ul>
       			</li>
 				<li><a href="#">Online Inquiry</a></li>

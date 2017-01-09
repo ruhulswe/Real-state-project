@@ -9,14 +9,14 @@
 
 			<div class="project-one">
 				<div class="project-desc">
-					<h5>PROJECT NAME: BERKELEY FATEMA</h5>
-					<p>At 635, West Kazipara (Main Road), Mirpur, Dhaka</p>
+					<h5>PROJECT NAME: BERKELEY SHAHANA</h5>
+					<p>At 652, West Kazipara, Mirpur, Dhaka</p>
 					<hr>
 
 					<table>
 						<tr>
 							<th>Address </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 635, West Kazipara (Main Road), Mirpur, Dhaka</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 652, West Kazipara , Mirpur, Dhaka</td>
 						</tr>
 						<tr>
 							<th>Project Type </th>
@@ -24,7 +24,7 @@
 						</tr>
 						<tr>
 							<th>Project Status </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Ongoing</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Completed  </td>
 						</tr>
 						<tr>
 							<th>Approval </th>
@@ -32,15 +32,7 @@
 						</tr>
 						<tr>
 							<th>Approval Date </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Thursday, May 08, 2014</td>
-						</tr>
-						<tr>
-							<th>Construction Start Date </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Thursday, January 01, 2015</td>
-						</tr>
-						<tr>
-							<th>Estimated Construction Period </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 24 Months. (approx.)</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; April, 2013</td>
 						</tr>
 					</table>
 				</div>
@@ -55,7 +47,7 @@
 						</tr>
 						<tr>
 							<th>Floor(s) </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; G+7</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; G+5</td>
 						</tr>
 					</table>	
 				</div>
@@ -67,35 +59,33 @@
 						<tr>
 							<th>Type</th>
 							<th>Total&nbsp;&nbsp;&nbsp;</th>
-							<th>Saleable&nbsp;&nbsp;&nbsp;</th> 
-							<th>Available&nbsp;&nbsp;&nbsp;</th>
+							<th>Sold&nbsp;&nbsp;&nbsp;</th> 
 						</tr>
 						<tr>
 							<td><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Flat&nbsp;&nbsp;&nbsp;</td>
-							<td>12</td> 
-							<td>0</td>
-							<td>12</td>
+							<td>10</td> 
+							<td>10</td>
 						</tr>
 					</table>
 				</div>
 
 
 				<div class="project-img">
-					<img src="img/ongoing-project-1.jpg" alt="project-1-image">
+					<img src="img/ready-project-1.jpg" alt="project-1-image">
 				</div>
 			</div>
 
 
 			<div class="project-one">
 				<div class="project-desc">
-					<h5>PROJECT NAME: BERKELEY FATEMA</h5>
-					<p>At 635, West Kazipara (Main Road), Mirpur, Dhaka</p>
+					<h5>PROJECT NAME: BERKELEY MOLLAH CASTLE</h5>
+					<p>34/1/B Mayakanon, Ahmedbag, Dhaka</p>
 					<hr>
 
 					<table>
 						<tr>
 							<th>Address </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 635, West Kazipara (Main Road), Mirpur, Dhaka</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 34/1/B Mayakanon, Ahmedbag, Dhaka</td>
 						</tr>
 						<tr>
 							<th>Project Type </th>
@@ -103,7 +93,7 @@
 						</tr>
 						<tr>
 							<th>Project Status </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Ongoing</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Completed</td>
 						</tr>
 						<tr>
 							<th>Approval </th>
@@ -111,15 +101,7 @@
 						</tr>
 						<tr>
 							<th>Approval Date </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Thursday, May 08, 2014</td>
-						</tr>
-						<tr>
-							<th>Construction Start Date </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Thursday, January 01, 2015</td>
-						</tr>
-						<tr>
-							<th>Estimated Construction Period </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 24 Months. (approx.)</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; April, 2015</td>
 						</tr>
 					</table>
 				</div>
@@ -134,7 +116,7 @@
 						</tr>
 						<tr>
 							<th>Floor(s) </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; G+7</td>
+							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; G+5</td>
 						</tr>
 					</table>	
 				</div>
@@ -146,33 +128,19 @@
 						<tr>
 							<th>Type</th>
 							<th>Total&nbsp;&nbsp;&nbsp;</th>
-							<th>Saleable&nbsp;&nbsp;&nbsp;</th> 
-							<th>Available&nbsp;&nbsp;&nbsp;</th>
+							<th>Sold&nbsp;&nbsp;&nbsp;</th> 
 						</tr>
 						<tr>
 							<td><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Flat&nbsp;&nbsp;&nbsp;</td>
-							<td>12</td> 
-							<td>0</td>
-							<td>12</td>
-						</tr>
-						<tr>
-							<td><i class="fa fa-university" aria-hidden="true"></i>&nbsp;office&nbsp;&nbsp;&nbsp;</td>
-							<td>8</td> 
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td><i class="fa fa-university" aria-hidden="true"></i>&nbsp;office&nbsp;&nbsp;&nbsp;</td>
 							<td>10</td> 
-							<td>0</td>
-							<td>0</td>
+							<td>5</td>
 						</tr>
 					</table>
 				</div>
 
 
 				<div class="project-img">
-					<img src="img/ongoing-project-2.jpg" alt="project-1-image">
+					<img src="img/ready-project-2.jpg" alt="project-1-image">
 				</div>
 			</div>
 
