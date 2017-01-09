@@ -53,7 +53,7 @@
 					<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 					  <li><a href="#">Upcoming Project</a></li>
-					  <li><a href="#">Ongoing Project</a></li>
+					  <li><a href="ongoing-project.php">Ongoing Project</a></li>
 					  <li><a href="#">Ready Project</a></li>
 					</ul>
       			</li>

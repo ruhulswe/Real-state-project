@@ -379,15 +379,65 @@ a:focus, a:hover {
 /*  about-us */
 
 
+
+
+
+/* photo-gallery */
+
 .photo-gallery{}
 .photo-gallery img{
 	width: 100%;
-	
 }
 
 .section-title{
 	margin-bottom: 40px;
 }
+
+
+/* photo-gallery */
+
+
+
+
+/* projects */
+
+
+.project_details_area{
+    padding-top: 20px;
+}
+
+.project-desc{
+    margin-bottom: 20px;
+}
+
+.project-details{
+    margin-bottom: 20px;
+}
+
+.project-details>h5{
+    margin-bottom: 10px;
+}
+
+
+.projects-details-only{
+    margin-bottom: 20px;
+}
+
+.projects-details-only>h5{
+    margin-bottom: 20px;
+}
+
+
+.project-img{
+    margin-bottom: 70px;
+}
+
+
+
+/* projects */
+
+
+
 
 
 
