@@ -1,5 +1,10 @@
 <?php 
   require_once "inc/header.php";
+  require_once "config/dbconfig.php";
+  $db = new Database;
+  //$db->dbCreation("berkeley");
+  //$db->createTable("gallery");
+  //$db->dropTable("gallery");
 ?>   
    
    <!-- start of hero area  -->
@@ -42,7 +47,7 @@ value to the community.</p>
 both as individuals and as a company. We believe in teamwork, innovation, professionalism, and
 long-term decision-making. We endeavor to preserve and enhance our reputation for integrity
 through all our actions.</p>
-					<a href="mission-vission.html"><button class="btn btn-brown">Read More</button></a>
+					<a href="mission-vission.php"><button class="btn btn-brown">Read More</button></a>
 				</div>
    			</div>
    			<div class="col-md-6">
