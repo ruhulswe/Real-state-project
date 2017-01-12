@@ -52,9 +52,10 @@
 		public function createTable($tbName)
 		{
 			$query = "CREATE TABLE IF NOT EXISTS $tbName (
-			  `id` int(50) NOT NULL DEFAULT '0',
+			  `id` int(50) AUTO_INCREMENT,/*NOT NULL DEFAULT '0',*/
+			  `username` varchar(50),
 			  `email` varchar(50) NOT NULL,
-			  `password` int(20) NOT NULL,
+			  `password` varchar(150) NOT NULL,
 			  PRIMARY KEY (`id`)
 			)";
 			$prepareQuery = $this->pdo->prepare($query);
@@ -81,6 +82,17 @@
 			$tbDroped = $this->pdo->query($dropQuery);
 			if($tbDroped){ echo "{$tbName} table dropped "; }
 			else { echo "table not created"; }
+		}
+
+
+		// this method for getting single data
+		public function TRUNCATE($tbName)
+		{
+			$sql = "TRUNCATE TABLE $tbName";
+			$prepareQuery = $this->pdo->prepare($sql);
+			$executeQuery = $prepareQuery->execute();
+			if($executeQuery){ echo "all row of $tbName table is deleted."; }
+			else{ echo "not truncated"; }
 		}
 
 
@@ -234,18 +246,6 @@
 			$executeQuery = $prepareQuery->execute();
 			return $executeQuery ? true : false;
 			//return $sql;
-		}
-
-
-		// this method for getting single data
-		public function singleData($tbName,$id)
-		{
-			$query = "SELECT * FROM $tbName WHERE id = ?";
-			$prepareQuery = $this->pdo->prepare($query);
-			$executeQuery = $prepareQuery->execute(array($id));
-			$result = $prepareQuery->fetchAll();
-			if(!$executeQuery){ return false; }
-			else { return $result; };
 		}
 
 

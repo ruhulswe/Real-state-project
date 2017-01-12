@@ -34,12 +34,14 @@
 
           <div class="form-group">
             <label for="email">Email address:</label>
-            <input type="email" name="email" value=" <?php if(session::getter('email')){ echo session::getter('email'); } ?> " class="form-control" id="email">
+            <input name="email" value=" <?php if(session::getter('email')){ echo session::getter('email'); } ?> " class="form-control" id="email">
             <!-- alert message -->
             <?php if(session::getter('empty-email')){ ?>
                 <p class="alert-text"><?php echo session::getter('empty-email'); ?></p> 
             <?php } ?>
-            <?php if(session::getter('invalid-email')){ echo session::getter('invalid-email'); } ?>
+            <?php if(session::getter('invalid-email')){ ?>
+              <p class="alert-text"><?php  echo session::getter('invalid-email'); ?></p> 
+            <?php } ?>
           </div>
 
           <div class="form-group">
