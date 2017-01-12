@@ -5,13 +5,18 @@
 	require_once (__DIR__.'/../helper/helper.php');
 	$db = new Database;
 	session::init();
-
+/*var_dump($_POST);
+exit();*/
 	if($_SERVER['REQUEST_METHOD']=='POST'){
+
 		extract($_POST);
 		$email = helper::validation($email);
 		$password = helper::validation($password);
+
 		if(!empty($email) && !empty($password)){
+
 			if(helper::email_validation($email)){
+
 				$password = md5($password);
 				$tbName = "admin";
 				$selectArr = array(
@@ -20,12 +25,33 @@
 				);
 				$result =  $db->selection($tbName,$selectArr);
 				if($result){
+					if($rememberme=='on'){
+						setcookie('user',$email,time()+60);
+					}
 					session::setter('admin','true');
 					session::setter('email',$email);
 					header("Location:index.php");
 				}else{
-					var_dump($result);
-					echo "something wrong u entered.";
+
+					$tbName = "admin";
+					$selectArr = array(
+					  'where' => array('email'=>$email),
+					  'return_type' => 'rowCount'
+					);
+					$result =  $db->selection($tbName,$selectArr);
+					if(!$result){					
+						session::setter('wrong-email','email is wrong.');
+					}
+					$selectArr = array(
+					  'where' => array('password'=>$password),
+					  'return_type' => 'rowCount'
+					);
+					$result =  $db->selection($tbName,$selectArr);
+					if(!$result){
+						session::setter('wrong-password','password is wrong.');
+					}
+					session::setter('email',$email);
+					header("Location:index.php");	
 				}
 			}else{
 				session::setter('email',$email);

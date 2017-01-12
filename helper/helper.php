@@ -15,6 +15,14 @@
 		}
 
 
+		public static function cookieSetter(){
+			if(isset($_SESSION['email']) && isset($_COOKIE['user'])){
+				$loggedin = TRUE;
+				return $loggedin;
+			}
+		}
+
+
 
 		public static function email_validation($email){
 

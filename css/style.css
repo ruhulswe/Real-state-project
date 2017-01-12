@@ -479,7 +479,17 @@ ul>li{
 /*   admin css   */
 
 .alert-text{
-    color: red;
+    color: #ff4c4c;
+}
+
+.error-area{
+    background: #F3F3F3;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+.error-area>p{
+    line-height: 1.3;
+    color: #ff4c4c;
 }
 
 /*  admin css  */

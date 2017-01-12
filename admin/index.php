@@ -8,9 +8,11 @@
     //$db->createTable("admin");
     //$db->dropTable("admin");
     //$db->TRUNCATE("admin");
-   /* if(!(session::getter("admin"))){
+    if(!(session::getter("admin"))){
         header("Location:login.php");
-    }*/
+        exit();
+    }
+
 
     $tbName = "admin";
     $selectArr = array(
@@ -35,7 +37,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
 

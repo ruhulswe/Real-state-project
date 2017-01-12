@@ -22,6 +22,7 @@
 			}
 		}
 
+
 		// database connection creation method
 		public function connectDB()
 		{
