@@ -52,7 +52,7 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
 					<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-					  <li><a href="#">Upcoming Project</a></li>
+					  <li><a href="up-comming-project.php">Upcoming Project</a></li>
 					  <li><a href="ongoing-project.php">Ongoing Project</a></li>
 					  <li><a href="ready-project.php">Ready Project</a></li>
 					</ul>

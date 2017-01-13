@@ -2,6 +2,12 @@
 	require_once "inc/header.php";
 ?>
 
+<div class="container">
+	<div class="hero-img">
+		<img src="img/ongoing_project-hero.jpg" style="width: 100%;margin-bottom: 20px;" alt="">
+	</div>
+</div>
+
 <div class="project_details_area">
 	<div class="container">
 		<div class="row">
