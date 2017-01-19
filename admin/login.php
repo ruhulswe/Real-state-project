@@ -1,9 +1,5 @@
 <?php 
-  require_once (__DIR__.'/../helper/session.php');
-  require_once (__DIR__.'/../config/dbconfig.php');
-  require_once (__DIR__.'/../helper/helper.php');
-  $db = new Database;
-  session::init();
+  require_once (__DIR__.'/inc/important_header_file.php');
   //$db->dbCreation("berkeley");
   //$db->createTable("gallery");
   //$db->dropTable("gallery");

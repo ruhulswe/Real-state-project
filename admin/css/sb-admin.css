@@ -225,3 +225,22 @@ ul.alert-dropdown {
 .panel-yellow > a:hover {
     color: #df8a13;
 }
+
+
+
+/* custom css */
+
+
+#projects_table>tr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+tr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* end of custom css */
