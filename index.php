@@ -15,8 +15,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="hero_text">
-						<h3>build your home with us</h3>
-						<h3>we will give best services</h3>
+						<h3>build your home with us<br>
+						we will give you best services</h3>
 					</div>
 				</div>
 			</div>

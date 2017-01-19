@@ -210,8 +210,10 @@ a:focus, a:hover {
 }
 
 .hero_text {
-	margin-top: 220px;
-	margin-bottom: 220px;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero_text h3{
 	color: #fff;

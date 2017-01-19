@@ -6,19 +6,20 @@
    			<div class="col-md-4">
    				<div class="addres-area">
    					<h4>Address</h4>
-   					<p>Eastern commercial space</p>
-   					<p>A alliances building</p>
-   					<p>63 progoti sarani</p>
-   					<p>Baridhara bashundhara</p>
+   					<p>Suite No:10/1 & 10/8 (10th Floor),</p>
+   					<p>Eastern Commercial Complex,</p>
+   					<p>73, Kakrail, Ramna</p>
+   					<p>Dhaka-1000</p>
    					<p>Dhaka , -1207</p>
    				</div>
    			</div>
    			<div class="col-md-4">
    				<div class="contact-info">
    					<h4>Contact-info</h4>
-   					<p>+88 02 8831704</p>
-   					<p>+88 02 8831704</p>
-   					<p>+88 02 8831704</p>
+   					<p>Telephone: +88-02-9334016</p>
+   					<p>Cell: 01799447755, 01799447700</p>
+            <p>E-mail:info@berkeleyhomesltd.com</p>
+   					<p>Web: www.berkeleyhomesltd.com</p>
    				</div>
    			</div>
    			<div class="col-md-4">
