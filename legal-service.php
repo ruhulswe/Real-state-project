@@ -1,8 +1,7 @@
 <?php 
-
-  require_once "inc/header.php";
-
-?> 
+	require_once (__DIR__.'/inc/important_header_file.php');
+	require_once "inc/header.php";
+?>
    
    
    
@@ -19,12 +18,22 @@
 					
 				</div>
 				<div class="home-loan-text col-md-8 col-md-offset-2">
-					<p style="margin-bottom:30px;">Our legal department is obliged to ensure the authenticity of the land before taking up any project. During the construction period, we abide by all legitimate procedures to avoid any later hassles that can damage our organization’s reputation or our valued client's peace.</p>
-					<p style="margin-bottom:30px;">The registration of the apartments is done right on time through proper procedures and at a minimum service charge. We provide valid documents and receipts to our clients as an assurance of transparency.</p>
-					<p style="margin-bottom:30px;">Moreover, we also help the client or landowner with regular legal services like modification, amendments, certification, attestation, payment of dues etc.</p>
-				</div>
-				<div class="typical-apartment-text col-md-8 col-md-offset-2">
-					
+	            <?php 
+	                $tbName = "services";
+	                $selectArr = array(
+	                  'where' => array('service_cat'=>'legal'),
+	                  'return_type' => 'all'
+	                );
+	                $selectAll = $db->selection($tbName,$selectArr);
+	                if($selectAll){
+	                    foreach ($selectAll as $value) {
+	            ?>
+
+					<div class="typical-para">
+						<?php echo $value['service_description']; ?>
+					</div>
+
+				<?php } }else{ echo "no more structural feature."; } ?>
 				</div>
    			</div>
    		</div>

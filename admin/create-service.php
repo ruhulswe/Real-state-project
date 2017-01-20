@@ -9,25 +9,25 @@
                 <h1>Create a upcomming project ... .. .</h1>
                 <div>
                     <?php 
-                        if(session::getter("feature_success")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("feature_success"); ?></p> <?php }else{ ""; }
+                        if(session::getter("service_success")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("service_success"); ?></p> <?php }else{ ""; }
  
-                        if(session::getter("feature_error")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("feature_error"); ?></p> <?php }else{ ""; }
+                        if(session::getter("service_error")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("service_error"); ?></p> <?php }else{ ""; }
                     ?>
                 </div>
                 <div class="post">
-                    <form action="feature-process.php" method="POST">
+                    <form action="service-process.php" method="POST">
                     <table id="projects_table">
                         <tr>
                             <td>
-                                <textarea id="summernote" class="form-control" placeholder="write daily work" name="feature_description" id="feature_description"></textarea>
+                                <textarea id="summernote" class="form-control" placeholder="write daily work" name="service_description" id="service_description"></textarea>
                             </td>
                         </tr>
                         <tr class="select_catagory">
                             <td>
-                                <select name="feature_cat" id="feature_cat" required>
-                                    <option value="structural">structural</option>
-                                    <option value="common">common</option>
-                                    <option value="typical">typical</option>
+                                <select name="service_cat" id="service_cat" required>
+                                    <option value="bank">bank</option>
+                                    <option value="legal">legal</option>
+                                    <option value="maintenance">maintenance</option>
                                 </select>
                             </td>
                         </tr>
@@ -58,7 +58,7 @@
 
 <?php 
 
-    session::unseter("feature_error");
-    session::unseter("feature_success");
+    session::unseter("service_error");
+    session::unseter("service_success");
 
 ?>

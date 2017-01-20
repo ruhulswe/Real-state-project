@@ -57,8 +57,6 @@
 
 <?php 
 
-    session::unseter("project_error");
-    session::unseter("project_success");
     session::unseter("project_deleted");
 
 ?>

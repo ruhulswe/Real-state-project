@@ -1,6 +1,7 @@
-        <?php 
-             require_once (__DIR__.'/inc/header.php');
-        ?>
+<?php 
+     require_once (__DIR__.'/inc/header.php');
+?>
+
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -8,16 +9,16 @@
                 <!-- projects -->
                 <div>
                     <?php 
-                        if(session::getter("feature_deleted")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("feature_deleted"); ?></p> <?php }else{ ""; }
+                        if(session::getter("service_deleted")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("service_deleted"); ?></p> <?php }else{ ""; }
                     ?>
                 </div>
 
                 <div class="project_area">
                     <h3>Upcomming project that is now show on main page.</h3>
                     <?php 
-                        $tbName = "features";
+                        $tbName = "services";
                         $selectArr = array(
-                          'where' => array('feature_cat'=>'common'),
+                          'where' => array('service_cat'=>'maintenance'),
                           'return_type' => 'all'
                         );
                         $selectAll = $db->selection($tbName,$selectArr);
@@ -25,16 +26,16 @@
                             foreach ($selectAll as $key => $value) {
                     ?>
                     <div class="project_description">
-                         <?php echo $value['feature_description'];  ?>
+                         <?php echo $value['service_description'];  ?>
                     </div>
-                    <a href="feature_del.php?id=<?php echo $value['id']; ?>&type=structural ">Delete</a>
+                    <a href="service_del.php?id=<?php echo $value['id']; ?>&type=bank ">Delete</a>
                 </div>
                 <hr><br>
 
                     <?php 
                             }
                         }else{ 
-                            echo "no ongoing-project yet now."; 
+                            echo "no bank service yet now."; 
                         } 
                     ?>
                 <!-- projects -->  
@@ -57,6 +58,6 @@
 
 <?php 
 
-    session::unseter("project_deleted");
+    session::unseter("service_deleted");
 
 ?>

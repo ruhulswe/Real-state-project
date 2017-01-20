@@ -1,7 +1,6 @@
 <?php 
-
+  require_once (__DIR__.'/inc/important_header_file.php');
   require_once "inc/header.php";
-
 ?>
    
    
@@ -19,7 +18,25 @@
 					
 				</div>
 				<div class="home-loan-text col-md-8 col-md-offset-2">
-					<p style="margin-bottom:30px;"><span class="company-name">Berkeley</span> offers exceptional maintenance services to its associates. Our regular Warranty Period for the projects is one year from the date of handing over possession of the apartments to the landowner. During the warranty period, any defect, which will be observed, is rectified by us. Even after this period, Berkeley would extend its service on cost for the completed projects.</p>
+        </div>
+        <div class="home-loan-text col-md-8 col-md-offset-2">
+            <?php 
+                $tbName = "services";
+                $selectArr = array(
+                  'where' => array('service_cat'=>'maintenance'),
+                  'return_type' => 'all'
+                );
+                $selectAll = $db->selection($tbName,$selectArr);
+                if($selectAll){
+                    foreach ($selectAll as $value) {
+            ?>
+
+            <div class="typical-para">
+              <?php echo $value['service_description']; ?>
+            </div>
+
+            <?php } }else{ echo "no more structural feature."; } ?>
+
 				</div>
 				<div class="typical-apartment-text col-md-8 col-md-offset-2">
 					

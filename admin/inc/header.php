@@ -162,7 +162,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#feature"><i class="fa fa-fw fa-arrows-v"></i> Peatures <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#feature"><i class="fa fa-fw fa-arrows-v"></i> Features <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="feature" class="collapse">
                             <li>
                                 <a href="create-feature.php">create feature</a>
@@ -175,6 +175,23 @@
                             </li>
                             <li>
                                 <a href="typical.php">typical appartment</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#service"><i class="fa fa-fw fa-arrows-v"></i> Service <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="service" class="collapse">
+                            <li>
+                                <a href="create-service.php">create service</a>
+                            </li>
+                            <li>
+                                <a href="bank.php">bank loan</a>
+                            </li>
+                            <li>
+                                <a href="legal.php">legal service</a>
+                            </li>
+                            <li>
+                                <a href="maintenance.php">Maintenance</a>
                             </li>
                         </ul>
                     </li>

@@ -33,7 +33,6 @@
                         <tr class="select_catagory">
                             <td>
                                 <select name="project_cat" id="project_cat" required>
-                                    <option >select catagory</option>
                                     <option value="comming_project">comming project</option>
                                     <option value="ongoing_project">ongoing project</option>
                                     <option value="ready_project">ready project</option>

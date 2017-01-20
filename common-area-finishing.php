@@ -17,16 +17,16 @@
 				</div>
 				<div class="typical-apartment-text col-md-8 col-md-offset-2">
 			
-                    <?php 
-                        $tbName = "features";
-                        $selectArr = array(
-                          'where' => array('feature_cat'=>'common'),
-                          'return_type' => 'all'
-                        );
-                        $selectAll = $db->selection($tbName,$selectArr);
-                        if($selectAll){
-                            foreach ($selectAll as $value) {
-                    ?>
+            <?php 
+                $tbName = "features";
+                $selectArr = array(
+                  'where' => array('feature_cat'=>'common'),
+                  'return_type' => 'all'
+                );
+                $selectAll = $db->selection($tbName,$selectArr);
+                if($selectAll){
+                    foreach ($selectAll as $value) {
+            ?>
 
 							<div class="typical-para">
 								<?php echo $value['feature_description']; ?>
