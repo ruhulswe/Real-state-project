@@ -142,10 +142,10 @@
                         <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="charts.html">slider image</a>
+                        <a href="gallery.php">Gallery image</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#project"><i class="fa fa-fw fa-arrows-v"></i> projects <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#project">projects <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="project" class="collapse">
                             <li>
                                 <a href="create-project.php">Create projects</a>
@@ -162,7 +162,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#feature"><i class="fa fa-fw fa-arrows-v"></i> Features <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#feature">Features <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="feature" class="collapse">
                             <li>
                                 <a href="create-feature.php">create feature</a>
@@ -179,7 +179,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#service"><i class="fa fa-fw fa-arrows-v"></i> Service <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#service">Service <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="service" class="collapse">
                             <li>
                                 <a href="create-service.php">create service</a>
@@ -194,9 +194,6 @@
                                 <a href="maintenance.php">Maintenance</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="gallery.php"><i class="fa fa-fw fa-dashboard"></i> Gallery image</a>
                     </li>
                     <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>

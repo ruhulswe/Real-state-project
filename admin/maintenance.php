@@ -28,7 +28,7 @@
                     <div class="project_description">
                          <?php echo $value['service_description'];  ?>
                     </div>
-                    <a href="service_del.php?id=<?php echo $value['id']; ?>&type=bank ">Delete</a>
+                    <a href="service_del.php?id=<?php echo $value['id']; ?>\&type=bank ">Delete</a>
                 </div>
                 <hr><br>
 
@@ -48,16 +48,9 @@
         <!-- /#page-wrapper -->
 
  
-
-
-
-        <?php 
-             require_once (__DIR__.'/inc/footer.php');
-        ?>
-
-
 <?php 
 
+    require_once (__DIR__.'/inc/footer.php');
     session::unseter("service_deleted");
 
 ?>

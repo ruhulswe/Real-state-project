@@ -30,6 +30,3 @@
     		header("Location:create-service.php");	
     	}
     }
-
-
-?>

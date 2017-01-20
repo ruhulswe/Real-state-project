@@ -52,12 +52,8 @@
 
 
 <?php 
+
     require_once (__DIR__.'/inc/footer.php');
-?>
-
-
-<?php 
-
     session::unseter("service_error");
     session::unseter("service_success");
 

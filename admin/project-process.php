@@ -9,8 +9,6 @@
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
     	extract($_POST);
-    	//echo $project_description;
-    	//echo $catagory;
     	$projects_img = $_FILES['project_img']['name'];
     	$projects_tmp_img = $_FILES['project_img']['tmp_name'];
     	if(!empty($project_description) && !empty($project_cat)){
@@ -25,7 +23,6 @@
                 $file_destination  = '../img/project/'.$file_new_name;
                  if(move_uploaded_file($projects_tmp_img, $file_destination)){
                  	echo "file uploaded.";
-					//insertion
 					$tbName = "projects";
 					$cond = array(
 					  "projects_description" => $project_description,
@@ -34,7 +31,6 @@
 					);
 					$isInserted = $db->insertion($tbName,$cond);
 					if($isInserted){
-		            	//echo "$file_ext is not allowed.";
 		            	session::setter('project_success',"project added.");	
 		            	header("Location:create-project.php");
 					}else{
@@ -54,6 +50,3 @@
     		header("Location:create-project.php");	
     	}
     }
-
-
-?>

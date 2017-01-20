@@ -51,13 +51,9 @@
 
 
 
-        <?php 
-             require_once (__DIR__.'/inc/footer.php');
-        ?>
-
-
 <?php 
 
+    require_once (__DIR__.'/inc/footer.php');
     session::unseter("service_deleted");
 
 ?>

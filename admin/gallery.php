@@ -11,15 +11,15 @@
 
 					<h2>Add gallery image.</h2>
 
-<div>
-<?php 
-    if(session::getter("gallery_success")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("gallery_success"); ?></p> <?php }else{ ""; }
+					<div>
+						<?php 
+						    if(session::getter("gallery_success")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("gallery_success"); ?></p> <?php }else{ ""; }
 
-    if(session::getter("gallery_error")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("gallery_error"); ?></p> <?php }else{ ""; }
+						    if(session::getter("gallery_error")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("gallery_error"); ?></p> <?php }else{ ""; }
 
-    if(session::getter("gallery_deleted")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("gallery_deleted"); ?></p> <?php }else{ ""; }
-?>
-</div>
+						    if(session::getter("gallery_deleted")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("gallery_deleted"); ?></p> <?php }else{ ""; }
+						?>
+					</div>
 					
 
 					<form action="gallery-process.php" method="POST" enctype="multipart/form-data">

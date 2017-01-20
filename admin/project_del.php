@@ -22,5 +22,3 @@
 			header("Location:$type.php");
 		}
 	}
-
-?>

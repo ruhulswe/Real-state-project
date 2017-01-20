@@ -60,12 +60,8 @@
 
 
 <?php 
+
     require_once (__DIR__.'/inc/footer.php');
-?>
-
-
-<?php 
-
     session::unseter("project_error");
     session::unseter("project_success");
     session::unseter("project_deleted");

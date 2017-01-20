@@ -50,6 +50,3 @@
     		header("Location:gallery.php");	
     	}
     }
-
-
-?>

@@ -11,7 +11,6 @@
         );
         $selectAll = $db->selection($tbName,$selectArr);
         if($selectAll){
-        	//echo $selectAll['galleryimg'];exit();
         	$file = "../img/gallery/".$selectAll['galleryimg'];
         	if(unlink($file)){
 				$tbName = "gallery";
@@ -30,16 +29,3 @@
         	echo "not found.";
         }		
 	}
-	//$file = $_POST['imgsrc'];
-/*	echo $file." deleted";
-	exit();*/
-/*	if (!unlink($file)){
-	  echo ("Error deleting $file");
-	}else{
-	  echo ("Deleted $file");
-	}*/
-
-
-
-
-?>

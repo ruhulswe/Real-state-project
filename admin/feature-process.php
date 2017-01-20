@@ -9,8 +9,6 @@
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
     	extract($_POST);
-    	//echo $project_description;
-    	//echo $catagory;
     	if(!empty($feature_description) && !empty($feature_cat)){    
 			$tbName = "features";
 			$cond = array(
@@ -30,6 +28,3 @@
     		header("Location:create-feature.php");	
     	}
     }
-
-
-?>

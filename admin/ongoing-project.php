@@ -53,15 +53,9 @@
 
 
 
-        <?php 
-             require_once (__DIR__.'/inc/footer.php');
-        ?>
-
-
 <?php 
 
-    session::unseter("project_error");
-    session::unseter("project_success");
+    require_once (__DIR__.'/inc/footer.php');
     session::unseter("project_deleted");
 
 ?>
