@@ -70,36 +70,33 @@ through all our actions.</p>
    				<h3>Photo Gallery</h3>
    			</div>
    			<div class="photo-gallery">
-   				<div class="col-md-4">
-   					<div class="row">
-   						<a href="img/photo-one.jpeg" data-lightbox="roadtrip" data-title="My caption"><img src="img/photo-one.jpeg" alt=""></a>
-   					</div>
-   				</div>
-   				<div class="col-md-4">
-   					<div class="row">
-   						<a href="img/photo-one.jpeg" data-lightbox="roadtrip" data-title="My caption"><img src="img/photo-two.jpg" alt=""></a>
-   					</div>
-   				</div>
-   				<div class="col-md-4">
-   					<div class="row">
-   						<a href="img/photo-one.jpeg" data-lightbox="roadtrip" data-title="My caption"><img src="img/photo-one.jpeg" alt=""></a>
-   					</div>
-   				</div>
-   				<div class="col-md-4">
-   					<div class="row">
-   						<a href="img/photo-one.jpeg" data-lightbox="roadtrip" data-title="My caption"><img src="img/photo-two.jpg" alt=""></a>
-   					</div>
-   				</div>
-   				<div class="col-md-4">
-   					<div class="row">
-   						<a href="img/photo-one.jpeg" data-lightbox="roadtrip" data-title="My caption"><img src="img/photo-one.jpeg" alt=""></a>
-   					</div>
-   				</div>
-   				<div class="col-md-4">
-   					<div class="row">
-   						<a href="img/photo-one.jpeg" data-lightbox="roadtrip" data-title="My caption"><img src="img/photo-two.jpg" alt=""></a>
-   					</div>
-   				</div>
+          <div class="row">
+          <?php 
+              $tbName = "gallery";
+              $selectArr = array(
+                'return_type' => 'all'
+              );
+              $selectAll = $db->selection($tbName,$selectArr);
+              $i = 0;
+              if($selectAll){
+                  foreach ($selectAll as $value) { 
+                    if($i%3==0){ ?>
+                     </div><br><div class="row">
+                    <?php } 
+          ?>
+           				<div class="col-md-4">
+           					<div class="row">
+           						<a href="img/gallery/<?php echo $value['galleryimg']; ?>" data-lightbox="roadtrip" data-title="My caption"><img src="img/gallery/<?php echo $value['galleryimg']; ?>" alt=""></a>
+           					</div>
+           				</div>
+              <?php $i++;
+                      }
+                    }else{ 
+                        echo "no gallery image yet now."; 
+                    } 
+              ?>
+
+          </div>
    			</div>
    		</div>
    	</div>

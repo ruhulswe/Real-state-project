@@ -196,6 +196,9 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="gallery.php"><i class="fa fa-fw fa-dashboard"></i> Gallery image</a>
+                    </li>
+                    <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>
                 </ul>
