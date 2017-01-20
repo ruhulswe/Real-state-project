@@ -30,7 +30,7 @@
                     <div class="project_img">
                          <img src="../img/project/<?php echo $value['project_img'];  ?>" style="max-width: 500px;margin-bottom: 20px;" alt="">
                     </div>
-                    <a href="ongoing_project_del.php?id=<?php echo $value['id']; ?>&imgsrc=<?php echo $value['project_img']; ?>">Delete</a>
+                    <a href="project_del.php?id=<?php echo $value['id']; ?>&imgsrc=<?php echo $value['project_img']; ?>&type=ongoing-project ">Delete</a>
                 </div>
                 <hr><br>
 

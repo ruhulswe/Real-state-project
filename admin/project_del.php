@@ -12,14 +12,14 @@
 			$deleted = $db->delete($tbName,$cond);
 			if($deleted){
 				session::setter('project_deleted',"project deleted.");
-				header("Location:ready-project.php");
+				header("Location:$type.php");
 			}else{
 				session::setter('project_deleted',"file deleted but not from database.");
-				header("Location:ready-project.php");	
+				header("Location:$type.php");	
 			}
 		}else{
 			session::setter('project_deleted',"project not deleted.");
-			header("Location:ready-project.php");
+			header("Location:$type.php");
 		}
 	}
 

@@ -162,6 +162,23 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Peatures <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="create-feature.php">create feature</a>
+                            </li>
+                            <li>
+                                <a href="sturctural.php">structural</a>
+                            </li>
+                            <li>
+                                <a href="common.php">common area</a>
+                            </li>
+                            <li>
+                                <a href="typical.php">typical appartment</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>
                 </ul>
