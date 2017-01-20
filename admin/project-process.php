@@ -50,7 +50,7 @@
             	session::setter('project_error',"$file_ext is not allowed.");
             }
     	}else{
-    		session::setter('project_error','one or more input file is empty.');
+    		session::setter('project_error','one or more input field is empty.');
     		header("Location:create-project.php");	
     	}
     }

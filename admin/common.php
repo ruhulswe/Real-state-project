@@ -8,16 +8,16 @@
                 <!-- projects -->
                 <div>
                     <?php 
-                        if(session::getter("project_deleted")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("project_deleted"); ?></p> <?php }else{ ""; }
+                        if(session::getter("feature_deleted")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("feature_deleted"); ?></p> <?php }else{ ""; }
                     ?>
                 </div>
 
                 <div class="project_area">
                     <h3>Upcomming project that is now show on main page.</h3>
                     <?php 
-                        $tbName = "projects";
+                        $tbName = "features";
                         $selectArr = array(
-                          'where' => array('project_cat'=>'ongoing_project'),
+                          'where' => array('feature_cat'=>'common'),
                           'return_type' => 'all'
                         );
                         $selectAll = $db->selection($tbName,$selectArr);
@@ -25,12 +25,9 @@
                             foreach ($selectAll as $key => $value) {
                     ?>
                     <div class="project_description">
-                         <?php echo $value['projects_description'];  ?>
+                         <?php echo $value['feature_description'];  ?>
                     </div>
-                    <div class="project_img">
-                         <img src="../img/project/<?php echo $value['project_img'];  ?>" style="max-width: 500px;margin-bottom: 20px;" alt="">
-                    </div>
-                    <a href="project_del.php?id=<?php echo $value['id']; ?>&imgsrc=<?php echo $value['project_img']; ?>&type=ongoing-project ">Delete</a>
+                    <a href="feature_del.php?id=<?php echo $value['id']; ?>&type=structural ">Delete</a>
                 </div>
                 <hr><br>
 

@@ -14,16 +14,16 @@
 
                 <div class="project_area">
                     <h3>Upcomming project that is now show on main page.</h3>
-<?php 
-    $tbName = "projects";
-    $selectArr = array(
-      'where' => array('project_cat'=>'ready_project'),
-      'return_type' => 'all'
-    );
-    $selectAll = $db->selection($tbName,$selectArr);
-    if($selectAll){
-        foreach ($selectAll as $key => $value) {
-?>
+                    <?php 
+                        $tbName = "projects";
+                        $selectArr = array(
+                          'where' => array('project_cat'=>'ready_project'),
+                          'return_type' => 'all'
+                        );
+                        $selectAll = $db->selection($tbName,$selectArr);
+                        if($selectAll){
+                            foreach ($selectAll as $key => $value) {
+                    ?>
                     <div class="project_description">
                          <?php echo $value['projects_description'];  ?>
                     </div>
@@ -34,13 +34,12 @@
                 </div>
                 <hr><br>
 
-<?php 
-            }
-        }else 
-            { 
-                echo "no project yet now."; 
-            } 
-?>
+                    <?php 
+                            }
+                        }else{ 
+                            echo "no project yet now."; 
+                        } 
+                    ?>
                 <!-- projects -->   
 
 

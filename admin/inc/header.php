@@ -145,8 +145,8 @@
                         <a href="charts.html">slider image</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> projects <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#project"><i class="fa fa-fw fa-arrows-v"></i> projects <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="project" class="collapse">
                             <li>
                                 <a href="create-project.php">Create projects</a>
                             </li>
@@ -162,13 +162,13 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Peatures <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#feature"><i class="fa fa-fw fa-arrows-v"></i> Peatures <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="feature" class="collapse">
                             <li>
                                 <a href="create-feature.php">create feature</a>
                             </li>
                             <li>
-                                <a href="sturctural.php">structural</a>
+                                <a href="structural.php">structural</a>
                             </li>
                             <li>
                                 <a href="common.php">common area</a>
