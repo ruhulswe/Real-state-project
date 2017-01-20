@@ -1,4 +1,5 @@
 <?php 
+	require_once (__DIR__.'/inc/important_header_file.php');
 	require_once "inc/header.php";
 ?>
 
@@ -11,77 +12,35 @@
 <div class="project_details_area">
 	<div class="container">
 		<div class="row">
-			<div class="col-md- col-md-offset-3">
+			<div class="col-md-6 col-md-offset-3">
 
-			<div class="project-one">
-				<div class="project-desc">
-					<h5>PROJECT NAME: BERKELEY FATEMA</h5>
-					<p>Plot: 34, Road: 06, Section: 02, Block: H</p>
-					<hr>
+			<?php 
+			    $tbName = "projects";
+			    $selectArr = array(
+			      'where' => array('project_cat'=>'comming_project'),
+			      'return_type' => 'all'
+			    );
+			    $selectAll = $db->selection($tbName,$selectArr);
+			    if($selectAll){
+			        foreach ($selectAll as $key => $value) {
 
-					<table>
-						<tr>
-							<th>Address </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Plot: 34, Road: 06, Section: 02, Block: H</td>
-						</tr>
-						<tr>
-							<th>Size </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 1900 sft (approx.)</td>
-						</tr>
-						<tr>
-							<th>Hand over date  </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; June 2019</td>
-						</tr>
-						<tr>
-							<th>Special Attributes  </th>
-							<td>
-							&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Lake-adjacent open view&nbsp; , Single unit lavish flat&nbsp; , Two elevators (1 regular + 1 stretcher)&nbsp; , 100% power backup&nbsp; , &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellent architectural features with lush&nbsp; , andscaping&nbsp; , Open Garden<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-
-
-				<div class="project-img">
-					<img src="img/ongoing-project-1.jpg" alt="project-1-image">
-				</div>
-			</div>
-
-
-			<div class="project-one">
-				<div class="project-desc">
-					<h5>PROJECT NAME: BERKELEY FATEMA</h5>
-					<p>Plot: 32, Road: 06, Section: 02, Block: H</p>
-					<hr>
-
-					<table>
-						<tr>
-							<th>Address </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Plot: 32, Road: 06, Section: 02, Block: H</td>
-						</tr>
-						<tr>
-							<th>Size </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; 1900 sft (approx.)</td>
-						</tr>
-						<tr>
-							<th>Hand over date  </th>
-							<td>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; June 2019</td>
-						</tr>
-						<tr>
-							<th>Special Attributes  </th>
-							<td>
-							&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Lake-adjacent open view&nbsp; , Single unit lavish flat&nbsp; , Two elevators (1 regular + 1 stretcher)&nbsp; , 100% power backup&nbsp; , &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellent architectural features with lush&nbsp; , andscaping&nbsp; , Open Garden<br>
-							</td>
-						</tr>
-					</table>
-				</div>
-
-
-				<div class="project-img">
-					<img src="img/ongoing-project-2.jpg" alt="project-1-image">
-				</div>
-			</div>
-
+			?>
+					<div class="project-one">
+						<div class="project-desc">
+							<?php echo $value['projects_description'];  ?>
+						</div>
+						<?php if($value['project_img']){ ?>
+						<div class="project-img">
+						<img src="img/project/<?php echo $value['project_img'];  ?>" alt="">
+						</div>
+						<?php } ?>
+						<hr><br>
+					</div>
+			<?php 
+				} }else{
+					echo "no upcomming product yet now.";
+				} 
+			?>
 
 			</div>
 		</div>

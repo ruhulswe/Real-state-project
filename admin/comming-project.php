@@ -1,6 +1,6 @@
-        <?php 
-             require_once (__DIR__.'/inc/header.php');
-        ?>
+<?php 
+     require_once (__DIR__.'/inc/header.php');
+?>
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -54,13 +54,9 @@
 
 
 
-        <?php 
-             require_once (__DIR__.'/inc/footer.php');
-        ?>
-
-
 <?php 
 
+    require_once (__DIR__.'/inc/footer.php');
     session::unseter("project_error");
     session::unseter("project_success");
     session::unseter("project_deleted");
