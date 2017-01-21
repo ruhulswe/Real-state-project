@@ -2,7 +2,8 @@
      require_once (__DIR__.'/inc/header.php');
      if(!empty($_POST)){
         extract($_POST);
-        if(!empty($about_text)){
+        
+      if($about_text!="" && $about_text!=" "){
             $tbName = "aboutus";
             $cond = array(
               "about_text" => $about_text
@@ -44,12 +45,13 @@
                         if(session::getter("about_error")){ ?> <p style="color: red;font-weight: bold;font-size: 20px;"><?php echo session::getter("about_error"); ?></p> <?php }else{ ""; }
                     ?>
                 </div>
+                
                 <div class="post">
                     <form action="" method="POST">
                     <table>
                         <tr>
                             <td>
-                                <textarea id="summernote" class="form-control" name="about_text" value="<?php echo $selectAll['about_text']; ?>" > </textarea>
+                                <textarea id="summernote" class="form-control" name="about_text" required="required"> </textarea>
                             </td>
                         </tr>
                         <tr>
@@ -59,7 +61,12 @@
                         </tr>
                     </table>
                     </form>
-                </div>   
+                </div> 
+
+                <div class="col-md-8" style="margin-top: 30px;margin-bottom: 50px;">
+                    <h4 style="color: #C5A974">about us</h4>
+                    <?php echo $selectAll['about_text']; ?>
+                </div>  
 
 
             </div>
@@ -73,12 +80,8 @@
 
 
 <?php 
+
     require_once (__DIR__.'/inc/footer.php');
-?>
-
-
-<?php 
-
     session::unseter("about_error");
     session::unseter("about_success");
 
