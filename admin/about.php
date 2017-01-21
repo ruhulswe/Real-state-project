@@ -21,8 +21,6 @@
 
     $tbName = "aboutus";
     $selectArr = array(
-      //'select' => array('id','task','time'),
-      //'where' => array('id'=>1,'task'=>'task one'),
       'order_by' => 'id DESC',
       'limit' => array('0','1'),
       'return_type' => 'one'
