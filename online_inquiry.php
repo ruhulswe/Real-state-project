@@ -1,12 +1,6 @@
 <?php 
   require_once "inc/header.php";
-  require_once "config/dbconfig.php";
-  require_once "helper/helper.php";
-  require_once "helper/session.php";
-  $db = new Database;
-  //$db->dbCreation("berkeley");
-  //$db->createTable("gallery");
-  //$db->dropTable("gallery");
+  require_once (__DIR__.'/inc/important_header_file.php');
   if(!empty($_POST)){
   	extract($_POST);
   	helper::validation($name);helper::validation($address);
@@ -71,6 +65,8 @@
 
 <?php 
 
-  require_once "inc/footer.php";
+  	require_once "inc/footer.php";
+    session::unseter("success");
+    session::unseter("error");
 
 ?>

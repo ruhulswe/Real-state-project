@@ -179,6 +179,9 @@
                         <a href="about.php">About us</a>
                     </li>
                     <li>
+                        <a href="inquiry.php">Inquiry Message</a>
+                    </li>
+                    <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>
                 </ul>

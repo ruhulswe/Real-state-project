@@ -1,3 +1,17 @@
 td, th {
     padding: 10px;
 }
+
+.pagination_area{
+
+}
+
+.pagination{
+	margin:0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.pagination>li{
+	float: left;
+}
