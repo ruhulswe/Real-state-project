@@ -1,26 +1,10 @@
 <?php 
-    require_once (__DIR__.'/../../helper/session.php');
-    require_once (__DIR__.'/../../config/dbconfig.php');
-    require_once (__DIR__.'/../../helper/helper.php');
-    $db = new Database;
-    session::init();
-    //$db->dbCreation("berkeley");
-    //$db->createTable("admin");
-    //$db->dropTable("admin");
-    //$db->TRUNCATE("admin");
-    if(!(session::getter("admin"))){
-        header("Location:login.php");
-        exit();
-    }
-
-
     $tbName = "admin";
     $selectArr = array(
-      'where' => array('email'=>'nuralam862@gmail.com'),
+      'where' => array('email'=>session::getter("email")),
       'return_type' => 'one'
     );
     $result =  $db->selection($tbName,$selectArr);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -119,13 +103,9 @@
                         </li>
                     </ul>
                 </li>
-
                 <!--  profile & logout  -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php 
-                    $username = !empty($result['username']) ? $result['username'] : $result['email'];
-                    echo $username;
-                    ?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php if(!empty($result['username'])){ echo $result['username']; }?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>

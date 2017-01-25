@@ -41,11 +41,9 @@
 		            	header("Location:gallery.php");	
                  }
             }else{
-            	echo "$file_ext is not allowed.";
             	session::setter('gallery_error',"$file_ext is not allowed.");
             }
     	}else{
-            echo "<script>alert('$galleryimg')</script>";
     		session::setter('gallery_error','one or more input field is empty.');
     		header("Location:gallery.php");	
     	}

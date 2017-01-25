@@ -1,5 +1,11 @@
 <?php 
-     require_once (__DIR__.'/inc/header.php');
+    require_once (__DIR__.'/inc/important_header_file.php');
+
+    if(!session::getter("admin") && !session::getter("email")){
+        header("Location:login.php");
+    }
+
+    require_once (__DIR__.'/inc/header.php');
 ?>
 
         <div id="page-wrapper">
@@ -28,14 +34,14 @@
                     <div class="project_description">
                          <?php echo $value['service_description'];  ?>
                     </div>
-                    <a href="service_del.php?id=<?php echo $value['id']; ?>\&type=bank ">Delete</a>
+                    <a href="service_del.php?id=<?php echo $value['id']; ?>\&type=maintenance ">Delete</a>
                 </div>
                 <hr><br>
 
                     <?php 
                             }
                         }else{ 
-                            echo "no bank service yet now."; 
+                            echo "no maintenance service yet now."; 
                         } 
                     ?>
                 <!-- projects -->  

@@ -57,7 +57,7 @@
 					  <li><a href="ready-project.php">Ready Project</a></li>
 					</ul>
       			</li>
-				<li><a href="#">Online Inquiry</a></li>
+				<li><a href="online_inquiry.php">Online Inquiry</a></li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Features
 					<span class="caret"></span></a>

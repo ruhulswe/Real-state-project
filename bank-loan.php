@@ -2,9 +2,6 @@
 	require_once (__DIR__.'/inc/important_header_file.php');
 	require_once "inc/header.php";
 ?>
-   
-   
-   
    <!-- start of mission-vission -->
    
    <div class="typical-apartment-area">

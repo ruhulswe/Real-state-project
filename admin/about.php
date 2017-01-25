@@ -1,5 +1,14 @@
 <?php 
-     require_once (__DIR__.'/inc/header.php');
+
+    require_once (__DIR__.'/inc/important_header_file.php');
+
+    if(!session::getter("admin") && !session::getter("email")){
+        header("Location:login.php");
+    }
+
+    require_once (__DIR__.'/inc/header.php');
+
+     
      if(!empty($_POST)){
         extract($_POST);
         

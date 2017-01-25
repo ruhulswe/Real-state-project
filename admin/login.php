@@ -1,13 +1,9 @@
 <?php 
   require_once (__DIR__.'/inc/important_header_file.php');
-  //$db->dbCreation("berkeley");
-  //$db->createTable("gallery");
-  //$db->dropTable("gallery");
-
   // if cookie setet then go to index.php page
   if(helper::cookieSetter()){
-    header("Location:index.php");
-    exit();
+      header("Location:index.php");
+      exit();
   }
   
 ?>   

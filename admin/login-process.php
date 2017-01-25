@@ -1,8 +1,6 @@
 <?php 
 	
- 	require_once (__DIR__.'/inc/important_header_file.php');
-
-	if($_SERVER['REQUEST_METHOD']=='POST'){
+ 	    require_once (__DIR__.'/inc/important_header_file.php');
 
 		extract($_POST);
 		$email = helper::validation($email);
@@ -46,7 +44,7 @@
 						session::setter('wrong-password','password is wrong.');
 					}
 					session::setter('email',$email);
-					header("Location:index.php");	
+					header("Location:login.php");	
 				}
 			}else{
 				session::setter('email',$email);
@@ -65,4 +63,3 @@
 			}
 			header("Location:login.php");
 		}
-	}
