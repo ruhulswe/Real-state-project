@@ -63,6 +63,6 @@
 
 <?php 
 
-    session::unseter("project_deleted");
+    session::unseter("feature_deleted");
 
 ?>

@@ -7,13 +7,13 @@
    <div class="typical-apartment-area">
    	<div class="container">
    		<div class="row">
-   			<div class="col-md-12">
+   			<div class="container-fluid">
 				<div class="typical-apartment-img">
 					
 					<img src="img/bank-loan.jpg" alt="bank-loan">
 					
 				</div>
-				<div class="typical-apartment-text col-md-8 col-md-offset-2">
+				<div class="typical-apartment-text">
 
 
 	            <?php 

@@ -13,7 +13,7 @@
 
             <div class="container-fluid">
 
-                <h1>admin panel for berklay homes.</h1>
+                <h1>admin panel for berkeleyhomes.</h1>
 
             </div>
             <!-- /.container-fluid -->

@@ -33,7 +33,7 @@
                     <div class="project_description">
                          <?php echo $value['feature_description'];  ?>
                     </div>
-                    <a href="feature_del.php?id=<?php echo $value['id']; ?>&type=structural ">Delete</a>
+                    <a href="feature_del.php?id=<?php echo $value['id']; ?>&type=typical ">Delete</a>
                 </div>
                 <hr><br>
 
@@ -63,6 +63,6 @@
 
 <?php 
 
-    session::unseter("project_deleted");
+    session::unseter("feature_deleted");
 
 ?>

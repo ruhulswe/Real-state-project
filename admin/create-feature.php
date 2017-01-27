@@ -4,6 +4,7 @@
     if(!session::getter("admin") && !session::getter("email")){
         header("Location:login.php");
     }
+    
     require_once (__DIR__.'/inc/header.php');
 ?>
 

@@ -27,13 +27,13 @@
                     <table id="projects_table">
                         <tr>
                             <td>
-                                <textarea id="summernote" class="form-control" placeholder="write daily work" name="project_description" id="project_description"></textarea>
+                                <textarea id="summernote" class="form-control" placeholder="write daily work" name="project_description" required id="project_description"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="project-img">project image(if have)</label>
-                                <input type="file" name="project_img" class="" id="project-img" required="required">
+                                <input type="file" name="project_img" class="" id="project-img">
                             </td>
                         </tr>
                         <tr class="select_catagory">

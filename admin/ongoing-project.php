@@ -33,9 +33,11 @@
                     <div class="project_description">
                          <?php echo $value['projects_description'];  ?>
                     </div>
+                    <?php if($value['project_img']) { ?>
                     <div class="project_img">
                          <img src="../img/project/<?php echo $value['project_img'];  ?>" style="max-width: 500px;margin-bottom: 20px;" alt="">
                     </div>
+                    <?php } ?>
                     <a href="project_del.php?id=<?php echo $value['id']; ?>&imgsrc=<?php echo $value['project_img']; ?>&type=ongoing-project ">Delete</a>
                 </div>
                 <hr><br>

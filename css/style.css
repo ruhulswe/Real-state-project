@@ -448,17 +448,27 @@ a:focus, a:hover {
 
 /*   footer css   */
 
+
+
+.typical-para>ol{
+    margin-left: 40px;
+}
+
+.typical-para>ul{
+    margin-left: 40px;
+}
+
 .footer-area{
 	background: #D4D4D4;
 }
 
-ul{
+.footer-social-links{
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
 }
 
-ul>li{
+.footer-social-links>li{
 	float: left;
 }
 
